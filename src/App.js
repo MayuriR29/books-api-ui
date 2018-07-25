@@ -12,9 +12,18 @@ class App extends Component {
   render() {
     return (
       <div>
-        {this.state.books.map(book => {
-          return <li key={book._id}>{book.title}</li>;
-        })}
+        <div>
+          <h1>Books List</h1>
+          {this.state.books.map(book => {
+            return <li key={book._id}>{book.title}</li>;
+          })}
+        </div>
+        <div>
+          <h1>Authors List</h1>
+          {this.state.authors.map(author => {
+            return <li key={author._id}>{author.name}</li>;
+          })}
+        </div>
       </div>
     );
   }
