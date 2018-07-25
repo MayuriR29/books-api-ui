@@ -21,9 +21,7 @@ class App extends Component {
     const url =
       process.env.REACT_APP_BOOKS_API || "http://localhost:3000/books";
     const response = await fetch(url);
-    console.log("response", response);
     const books = await response.json();
-    console.log("books", books);
     this.setState({
       books: books
     });
