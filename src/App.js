@@ -18,11 +18,13 @@ class App extends Component {
     );
   }
   async componentDidMount() {
-    const response = await fetch("http://localhost:3000/books");
+    const response = await fetch(
+      process.env.REACT_APP_BOOKS_API || "http://localhost:3000/books"
+    );
     console.log("response", response);
     const books = await response.json();
     console.log("books", books);
-    this.setState ({
+    this.setState({
       books: books
     });
   }
