@@ -25,8 +25,8 @@ class Authors extends Component {
       authors: authors
     });
   }
-  async componentDidMount() {
-    await this.getAuthors();
+  componentDidMount() {
+     this.getAuthors();
   }
 }
 export default Authors;

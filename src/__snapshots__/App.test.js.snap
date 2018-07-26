@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a div with some snapshot 1`] = `
+<div>
+  <Books />
+  <Authors />
+</div>
+`;

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test title and booklist after component mounted  1`] = `
+<div>
+  <h1>
+    Books List
+  </h1>
+  <li>
+    Harry Potter
+  </li>
+  <li>
+    Jungle Book
+  </li>
+</div>
+`;
+
+exports[`test title is returned when render is called first  1`] = `
+<div>
+  <h1>
+    Books List
+  </h1>
+</div>
+`;
