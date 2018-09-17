@@ -11,6 +11,15 @@ class Books extends Component {
    async componentDidMount() {
      await this.getBooks();
   }
+  
+  async getBooks() {
+    const url = `${API_HOST}/books`;
+    const response = await fetch(url);
+    const books = await response.json();
+    this.setState({
+      books: books
+    });
+  }
   render() {
     return (
       <div>
@@ -20,14 +29,6 @@ class Books extends Component {
         })}
       </div>
     );
-  }
-  async getBooks() {
-    const url = `${API_HOST}/books`;
-    const response = await fetch(url);
-    const books = await response.json();
-    this.setState({
-      books: books
-    });
   }
 }
 export default Books;
